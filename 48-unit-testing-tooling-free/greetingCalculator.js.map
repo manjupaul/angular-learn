@@ -1,0 +1,1 @@
+{"version":3,"file":"greetingCalculator.js","sourceRoot":"","sources":["greetingCalculator.ts"],"names":["GreetingCalculator","GreetingCalculator.constructor","GreetingCalculator.greeting"],"mappings":"AAAA;IAAAA;IAIAC,CAACA;IAHCD,qCAAQA,GAARA;QACEE,MAAMA,CAACA,cAAcA,CAACA;IACxBA,CAACA;IACHF,yBAACA;AAADA,CAACA,AAJD,IAIC;AAJY,0BAAkB,qBAI9B,CAAA"}

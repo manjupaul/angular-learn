@@ -1,0 +1,31 @@
+<!-- Following kept free of styling to aid in demonstration -->
+<h4>My {{version}} Angular 2 App</h4>
+
+<p>Hello, {{person}}</p>
+
+<p [innerText]="person"></p>
+
+<!-- like HTML, Angular templates are surprisingly tolerant: -->
+<p [innerText]=person></p> <!-- innertext is html element property. we are adding person data to innerText of p-->
+
+<h4>Expressions</h4>
+<p>3 + 4 = {{ 3 + 4 }}</p>
+<p>My mother is {{ personObject.mother + "!!" }}</p>
+<p [innerText]="  'My mother is ' + personObject.mother + '!!'  "></p>
+
+<!-- function calls in template bindings don't work in AOT, best avoided -->
+<p>Function result is {{ calculate() }}</p> <!-- function works in dynamic mode in templates only. It fails in the AOT mode-->
+
+<p>In some earlier alphas, this would be an error:</p>
+<p>Made up variable: {{ madeUpVariableName }}</p>
+<p>Made up variable: {{ madeUpVariableName?.prop }}</p> <!-- define it can be undefined to avoid errors -->
+
+<h4>Sanitization</h4>
+<p>Sanitized by <b>Angular</b>:</p>
+<p [innerHtml]="stringWithHtml"></p> <!-- angular sanitizes html, unless trusted -->
+
+<p>If you bind to innerText, the <b>browser</b> does it (note the different output):</p>
+<p [innerText]="stringWithHtml"></p>
+<p [innerText]="myText"></p>
+<p>{{myText}}</p>
+<!-- one time binding in angular 2 is using :: -->

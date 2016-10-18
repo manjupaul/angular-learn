@@ -1,0 +1,129 @@
+Angular doesn't have two way bindings
+Angular augury
+ng inspector
+tslint
+instead od data-ng-click -> (Click) on html element property
+
+same component can be used in different places. different instances of the components are created.
+benefit of above - 35-central-state-management - display different things in same page or different page with same display but different data
+
+angular2 doesn't have $scope. the class has it own scope. Isolated scope
+
+
+divide aplication into ngModules and then the topest level will have all the ngModules
+Components are imported in ngModules where they are required 
+
+Shared moduels - 44 - multiple-ng-modules
+Augury - gives graphs of modules
+
+
+for angular2 in html property we do not have to do my-directive for myDirective for directives
+Angular2 processes the html
+
+
+ng-upgrade and ng-downgrade - to 
+have to use type script and classes 
+use both angular in same applications
+
+
+package.json in new project change to port (default port in 4200)
+"start": "ng serve --port 8080" ,
+
+
+yarn -> facebooks new npm
+
+
+ng generate component welcome -> short hand ng g c <name>
+
+ng generate <name of what we need to generate> <name of the thing>
+
+command + shift + P
+
+
+import es6 - imports file based
+import angular - imports packages like
+
+
+node / angular-cli - to build angular 2
+angular 2 works with custom build processes
+
+two ways of defining variable
+var & let, const
+var - function scope
+let - block scope {}
+
+
+let z: nunmber | string = 3 -> define variable of multiple type
+let z: any = 7 -> z can be of any data type
+
+
+styleUrls - loading style sheets
+
+Angular 2 TypeScript Emmet - Visual studio add on for code formatting
+language-vscode-javascript-...
+
+angular-cli.json - configurations for angular cli
+
+*ngIf -> * tells that angular is going to evaluate the 
+
+angular built in directives - for things that cannot be bind to html element property
+* -> directive  that manipulates dom 
+
+directive - custome attribute in angular 2
+
+components - custom element
+
+custome element
+
+@Input() -> to define that the variable is an Input
+@Input(<name>) - > name used while sending the data in html
+@Input('selectedOrderDetails') sod: IOrder;  sod in component, selectedOrderDetails used while using the component
+
+
+component data binding - only parent child communication
+
+
+two - way - data binding and component data binding??
+digest loop has to go through for tw-way data bindingin component data binding the over head for checking data chnages is easy for heirarchicael data
+child should not be chnaging parents data
+
+
+redux???
+ngRx
+
+paret -> child
+inout, []
+
+child -> parent
+output, ()
+
+Observables - Do not work things on chain if there is no one who subscribed
+Observables are like Promises
+Observables look into continous update
+
+
+https://bitbucket.org/jbalbes/ny-abc-oct-2016 --> workshop project
+
+@Injectable() - required in services which depends on other services
+@Component implicitly has @Injectable
+
+For simple hhtp calls with one time call we can use Promises
+
+
+In subscribe => preserves the scope of 'this'
+
+var x = {
+y: function() {
+return this;
+}}
+
+var z = x.y;
+if (z() === x.y())) ===> false
+
+var x = {
+y: () => {
+return this;
+}}
+
+var z = x.y;
+if (z() === x.y())) ===> true
