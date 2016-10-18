@@ -127,3 +127,6 @@ return this;
 
 var z = x.y;
 if (z() === x.y())) ===> true
+
+
+RxJs website for operators

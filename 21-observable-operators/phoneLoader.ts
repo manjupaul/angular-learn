@@ -33,6 +33,8 @@ export class PhoneLoader {
   exampleOfDo() {
     this.http.get('../demo-data/phones.json')
       // do() call a function for side effects, and returns the original Observable.
+      // do() should not change the actual data. It can work when we get the data on something else
+      // do() can change data, but per symantics we should not change data.
       .do((d: Response) => console.log('raw data', d))
       .map((res: Response) => res.json())
       .do((d: any) => console.log('processed data', d))
