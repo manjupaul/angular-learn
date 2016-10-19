@@ -138,3 +138,14 @@ components - custom elements
 directives - custom attributes
 
 look 39-directive-decorators - bind and directives
+
+Jack Balbes
+jack.balbes@oasisdigital.com
+
+John Baur
+john.baur@oasisdigital.com
+
+angularbootcamp.com/survey
+angularbootcamp.com/learn2.zip
+
+https://bitbucket.org/jbalbes/ny-abc-oct-2016/
