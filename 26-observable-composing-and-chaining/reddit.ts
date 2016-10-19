@@ -24,3 +24,5 @@ export class RedditComponent implements OnInit {
     this.results = this.ris.search(debouncedSearchTarget);
   }
 }
+
+// debounce - wait for x seconds till we get a new value

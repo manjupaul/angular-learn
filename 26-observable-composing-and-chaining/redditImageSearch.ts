@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
 export interface IRedditItem {
-  url?: string;
+  url?: string; // ? -> optional data
   title?: string;
 }
 

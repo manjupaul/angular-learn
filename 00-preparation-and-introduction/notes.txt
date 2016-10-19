@@ -130,3 +130,11 @@ if (z() === x.y())) ===> true
 
 
 RxJs website for operators
+
+switchMap is used for switching subscription between different observables.
+
+
+components - custom elements
+directives - custom attributes
+
+look 39-directive-decorators - bind and directives
