@@ -33,6 +33,7 @@ export class EmployeeDetailComponent implements OnInit {
       //     return a;
       //   }
       // }); or use "filter" operator . See http://reactivex.io/
+      // .filter(details => details.jpbId > 3)
 
       //switchMap understands that it has got an observable and subscribes to it automatically. It unscribes the original one and we subscribe to new one.
   }
