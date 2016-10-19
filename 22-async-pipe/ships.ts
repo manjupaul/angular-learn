@@ -10,7 +10,7 @@ import { IShip, MyService } from './my-service';
 })
 export class ShipsComponent implements OnInit {
   ships1: Observable<IShip[]>;
-  ships2: Promise<IShip[]>;
+  ships2: Promise<IShip[]>; // Promise is part of es6. In angular 1 it was part of it.
 
   constructor(private api: MyService) { }
 
