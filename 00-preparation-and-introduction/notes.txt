@@ -30,9 +30,6 @@ package.json in new project change to port (default port in 4200)
 "start": "ng serve --port 8080" ,
 
 
-yarn -> facebooks new npm
-
-
 ng generate component welcome -> short hand ng g c <name>
 
 ng generate <name of what we need to generate> <name of the thing>
@@ -149,3 +146,30 @@ angularbootcamp.com/survey
 angularbootcamp.com/learn2.zip
 
 https://bitbucket.org/jbalbes/ny-abc-oct-2016/
+
+
+onChanges life cycle hook
+ngonChanges interface -> to react on changes
+
+state management - 35 lesson (using observables)
+for observable - naming convention - use $ at end of the variable name
+
+
+
+redux ??
+reducer
+import * as state from './state' - import everything from state and assign it to state object
+
+
+ng build - of angular-cli - for production build - creates a dist folder with js and assets 
+uses webpack to convert ts to js
+
+ng build --prod --> minification included
+
+
+to run only one section of test add "f" to the section of the test
+
+
+
+yarn -> facebooks new npm
+yarn <=====> npm
