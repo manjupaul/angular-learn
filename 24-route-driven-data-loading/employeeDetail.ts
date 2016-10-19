@@ -22,5 +22,18 @@ export class EmployeeDetailComponent implements OnInit {
     this.employee$ = this.route.params
       .map(params => params['employeeId'])
       .switchMap(id => this.loader.getDetails(id)).share();
+
+      // this.employee$ = this.route.params
+      // .map(params => params['employeeId'])
+      // .switchMap(id => this.loader.getDetails(id)).share()
+      // .switchMap(details => {
+      //   if (details.jobId > 3) {
+      //     return b;
+      //   } else {
+      //     return a;
+      //   }
+      // }); or use "filter" operator . See http://reactivex.io/
+
+      //switchMap understands that it has got an observable and subscribes to it automatically. It unscribes the original one and we subscribe to new one.
   }
 }
